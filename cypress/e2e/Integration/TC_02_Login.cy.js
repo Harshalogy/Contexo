@@ -1,4 +1,3 @@
-Loginpage.js
 const urls = require('../../support/URLs');
 const login_page = require('../../support/pages/Login_Page');
 describe('User Login', () => {

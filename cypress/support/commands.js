@@ -13,7 +13,7 @@ Cypress.Commands.add('login', (email, password) => {
   cy.visit('https://contexo.io/');// website taking time to load
 
   // Find and click the Signin link 
-  cy.get(':nth-child(5) > .nav-link').click();
+  cy.get('.ms-3 > .mat-button-wrapper').click();
 
   cy.get('#mat-input-11').type(email);
   cy.get('#mat-input-12').type(password);
