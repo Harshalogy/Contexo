@@ -1,9 +1,8 @@
-const urls = require('../../support/URLs');
-
 describe('Left panel tabs', () => {
     beforeEach(() => {
+        cy.viewport(1500, 720);
         cy.fixture('user.json').then((user) => {
-            cy.login(user.email, user.password);
+            cy.login(user.email, user.password); // Assuming cy.login is a custom command
         });
     });
 
