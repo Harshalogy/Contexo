@@ -48,8 +48,11 @@ module.exports = {
     CancelButton: '[fxlayoutalign="flex-end"] > [tabindex="0"]',
     RegOffAddress: '.mat-option-text',
     MatOption: 'mat-option',
+    UserMenu: 'img.mat-menu-trigger',
+    UserProfile: '[routerlink="/userprofile"]',
+    ChangePassword: '[routerlink="/changepassword"]',
+    Logout: '.mat-menu-content > :nth-child(3)',
 
-    
     // Dropdown menus
     featuresDropdownMenu: '.dropdown-menu', 
     whoWeServeDropdownMenu: 'ul[_ngcontent-ng-c190261292=""] li.nav-item a.nav-link', // Update if necessary

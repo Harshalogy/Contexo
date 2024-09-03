@@ -3,6 +3,8 @@ const Locators = require('../../support/pages/Locators');
 describe('Validate Dashboard', () => {
     beforeEach(() => {
         cy.viewport(1500, 720);
+        cy.intercept('GET', '**/*', { log: false });
+        cy.intercept('POST', '**/*', { log: false });
         cy.fixture('user.json').then((user) => {
             cy.login(user.email, user.password); // Assuming cy.login is a custom command
         });
@@ -83,5 +85,18 @@ describe('Validate Dashboard', () => {
 
         cy.log('Checking First row of Activity Panel');
         cy.get(Locators.Firstrow).should('exist');
+
+        cy.log('Checking User menu');
+        cy.get(Locators.UserMenu).should('exist').click({ force: true });
+
+        cy.log('Checking Profile Option in User Menu');
+        cy.get(Locators.UserProfile).should('exist');
+
+        cy.log('Checking Change Password Option in User Menu');
+        cy.get(Locators.ChangePassword).should('exist');
+
+        cy.log('Checking Logout Option in User Menu');
+        cy.get(Locators.Logout).should('exist');
+        
     });
 });
