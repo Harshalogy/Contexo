@@ -78,9 +78,9 @@ describe('Validate Dashboard', () => {
             expect(cells.eq(1)).to.contain.text('Subject');
             expect(cells.eq(2)).to.contain.text('Description');
             expect(cells.eq(3)).to.contain.text('Project');
-            expect(cells.eq(4)).to.contain.text('Section');
-            expect(cells.eq(5)).to.contain.text('Created On');
-            expect(cells.eq(6)).to.contain.text('Action');
+            expect(cells.eq(4)).to.contain.text('Module');
+            expect(cells.eq(5)).to.contain.text('Created At');
+            expect(cells.eq(6)).to.contain.text('Archive');
         });
 
         cy.log('Checking First row of Activity Panel');

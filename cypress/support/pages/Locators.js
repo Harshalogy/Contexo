@@ -14,7 +14,7 @@ module.exports = {
     Menudrawer: '.mat-drawer-inner-container',
     ProjectMenu: ':nth-child(4) > .mat-list-item-content > .mat-list-text > .mat-line > .vertical-align-title',
     AddProjectButton: '.add-content > .mat-focus-indicator',
-    ProjectNameinput: '#mat-input-16',
+    ProjectNameinput: '#mat-input-17',
     SelectProjectType: '#mat-select-value-11',
     ProjectDiscInput: '#mat-input-17',
     SelectRegOffice: '#mat-select-value-13 > .mat-select-placeholder',
@@ -52,6 +52,17 @@ module.exports = {
     UserProfile: '[routerlink="/userprofile"]',
     ChangePassword: '[routerlink="/changepassword"]',
     Logout: '.mat-menu-content > :nth-child(3)',
+
+    //Particular project
+    FirstProject:':nth-child(2) > .cdk-column-prjNm > .mat-tooltip-trigger',
+    Hometab:'.active-list-item-B > .mat-list-item-content',
+    Heading:'div.section-style',
+    Edit_Project_Name:'#mat-input-32',
+    HomeTab_dashboard:'#mat-tab-label-0-1',
+    Invitation_By_Trade:'.google-chart',
+    SPEC_Type_By_Name :'.right-panel',
+    Search:'input[placeholder="Search"]',
+    Select_Document_area:'#mat-select-26 .mat-select-value-text .mat-select-min-line',
 
     // Dropdown menus
     featuresDropdownMenu: '.dropdown-menu', 
@@ -256,7 +267,7 @@ module.exports = {
     revenuebox1text: '$6.4 MillionWon',
     revenuebox2text: '75%Close Rate',
     revenuebox3text: '$63.3 MillionOpen',
-    revenuebox4text: '$2.2 MillionEstimated',
+    revenuebox4text: '$3.4 MillionEstimated',
     TypeHeadertext: 'Year to Date Close Rate by Type',
     EstimatorHeadertext: 'Year to Date Close Rate by Estimator',
     RevenueTitletext: 'Financials',

@@ -55,6 +55,7 @@ describe('Create Project', () => {
         // Log action: Choose owner contact
         cy.log('Choosing owner contact...');
         cy.get(Locators.OwnerContact).click();
+        cy.wait(1000);
         cy.contains('James Smith').click();
 
         // Log action: Choose lead estimator
