@@ -4,7 +4,7 @@ describe('Create Project', () => {
     beforeEach(() => {
         cy.viewport(1500, 720);
         cy.fixture('user.json').then((user) => {
-            cy.login(user.email, user.password); // Assuming cy.login is a custom command
+            cy.login(user.email, user.password); 
         });
     });
 

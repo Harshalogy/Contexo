@@ -4,7 +4,12 @@ module.exports = {
     passwordInput: '#mat-input-12',
     signinbutton: ':nth-child(9) > [type="submit"]',
     loginlink: '.ms-3 > .mat-button-wrapper',
+    forgotPasswordLink:'.ng-valid > :nth-child(1) > :nth-child(7) > a',
+    resetPasswordButton:'button[type="submit"].mat-raised-button.mat-accent',
     ErrorMessage: '#mat-error-15',
+    EmailRequiredMessage:'#mat-error-11',
+    ValidEmailAddressMessage:'#mat-error-13',
+    PasswordRequiredMessage:'#mat-error-12',
     
     // Menu items
     homeMenu: '#menu > :nth-child(1) > .nav-link',
@@ -237,6 +242,7 @@ module.exports = {
     HeaderRow: '.mat-header-row',
     HeaderCell: 'mat-header-cell',
     Firstrow: '.mat-table > :nth-child(2)',
+    PieChart:'svg[aria-label="A chart."]',
 
     // Text Message section
     AboutUsText: 'about usEstimate More In Less TimeOur online construction estimating software speeds up your estimates, cutting time spent on paperwork and giving you more time to get on with the job. The user-friendly project information tool ensures fast and accurate summary page of all critical information of the project. This information is compiled and transferred into your summary page of the excel report. Do You Have Any Exposure In The Bids Your Subs Are Giving You? The weakest point in most estimating systems is not able to check against what has been missed leading to scope busts, losses or litigation. Our system complements the estimators ability to ensure that they can very quickly check against our database and use the Contexo Computing power to get those checks done in minutes. Not only will it immediately improve your productivity and hence your capacity to bid much more projects with the same number of estimators. Have Peace Of Mind On Bids That You Have All The Scope. Our primary objective in designing the system was getting speed without sacrificing accuracy but using the computation power of modem computers to do the tedious work and let the Estimators have more time on hand. This allow them to have more time for creative solutions and thorough review of subcontractor bids.',
@@ -266,8 +272,8 @@ module.exports = {
     Badcredential: 'Bad credentials!',
     revenuebox1text: '$6.4 MillionWon',
     revenuebox2text: '75%Close Rate',
-    revenuebox3text: '$63.3 MillionOpen',
-    revenuebox4text: '$3.4 MillionEstimated',
+    revenuebox3text: '$63.9 MillionOpen',
+    revenuebox4text: '$2.8 MillionEstimated',
     TypeHeadertext: 'Year to Date Close Rate by Type',
     EstimatorHeadertext: 'Year to Date Close Rate by Estimator',
     RevenueTitletext: 'Financials',
